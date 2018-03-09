@@ -3,12 +3,11 @@ body {
   color: #1C1D21;
   font-family: Oswald, tahoma, sans-serif;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1500px;
 }
 
 div {
-  border: 1px #1b317f solid;
-  box-sizing: border-box;
+  border: 1px blue solid;
   display: block;
 }
 
@@ -23,6 +22,12 @@ h1 {
 
 h2 {
   font-size: 1.7rem;
+}
+
+p {
+  font-size: .9rem;
+  line-height: 1.4;
+  padding: 8px 0;
 }
 
 html {
@@ -86,6 +91,7 @@ header {
 
 /* main-welcome style */
 .banner {
+  background-color: #eee;
   margin-top: 64px;
 }
 
@@ -105,10 +111,25 @@ header {
 
 .start {
   flex-basis: 40%;
+  margin-top: 16px;
 }
 
 /* Information style */
 .information-main {
   align-items: flex-start;
   flex-direction: column;
+}
+
+.card {
+  display: flex;
+  padding: 16px 0 16px 16px
+}
+
+.card-image {
+  flex-basis: 35%;
+}
+
+.card-text {
+  flex-basis: 65%;
+  padding-left: 8px;
 }

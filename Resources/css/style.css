@@ -3,28 +3,45 @@ body {
   color: #1C1D21;
   font-family: Oswald, tahoma, sans-serif;
   margin: auto;
+  max-width: 1000px;
 }
 
 div {
   border: 1px #1b317f solid;
+  box-sizing: border-box;
   display: block;
 }
 
+h1, h2 {
+  padding: 12px 0px;
+}
+
 h1 {
-  font-weight: bold;
   font-size: 2.3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.7rem;
 }
 
 html {
   font-size: 16px;
 }
 
+img {
+  width: 100%;
+}
 .container {
   display: flex;
   justify-content: center;
 }
 
 /* header styles */
+header {
+  display: flex;
+}
+
 .top-banner {
   background-color: #92CDCF;
   display: flex;
@@ -68,15 +85,30 @@ html {
 }
 
 /* main-welcome style */
-.main-welcome {
+.banner {
+  margin-top: 64px;
+}
+
+.image {
+  flex-basis: 60%;
+}
+
+.large-left {
   align-items: center;
   display: flex;
-  justify-content: center;
-  margin-top: 64px;
   padding: 32px 24px;
 }
 
-.image img {
-  mask-repeat: no-repeat;
-  margin-right: 24px;
+.side-right {
+  padding-left: 24px;
+}
+
+.start {
+  flex-basis: 40%;
+}
+
+/* Information style */
+.information-main {
+  align-items: flex-start;
+  flex-direction: column;
 }

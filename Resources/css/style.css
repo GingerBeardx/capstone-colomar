@@ -39,6 +39,10 @@ img {
   justify-content: center;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .grey-back {
   background-color: #ddd;
 }
@@ -115,6 +119,26 @@ video {
   margin-left: 24px;
 }
 
+.banner .side-right h2 {
+  padding: 36px 0;
+}
+
+.side-right button {
+  background-color: #31353D;
+  border: none;
+  border-radius: 6px;
+  color: #EEEFF7;
+  font-size: 18px;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #445878;
+  transition: background-color 450ms ease-in;
+}
+
 .start {
   flex-basis: 40%;
   margin-top: 16px;
@@ -126,9 +150,26 @@ video {
   flex-direction: column;
 }
 
+.information-main img {
+  margin-bottom: 32px;
+}
+
+.information-main p {
+  margin: 24px 0;
+}
+
+.information-main h6 {
+  font-size: 12px;
+}
+
 .card {
+  align-items: center;
   display: flex;
   padding: 16px 0 16px 16px
+}
+
+.card p {
+  padding: 8px 0;
 }
 
 .card-image {
@@ -138,4 +179,40 @@ video {
 .card-text {
   flex-basis: 65%;
   padding-left: 8px;
+}
+
+.card-text a:hover {
+  color: #92CDCF;
+  transition: color 250ms ease-in;
+}
+
+/* Courses style */
+.courses-body h1 {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  margin: 0 16px;
+  margin-bottom: 32px;
+  width: 275px; /* I thought it made more sense from a responsiveness standpoint to fix the widths for the courses rather than try to get a certain margin on the left and right */
+}
+
+.course h2 {
+  padding: 16px;
+}
+
+.course h3 {
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+.course p {
+  padding: 0 16px 24px 16px;
 }

@@ -7,7 +7,6 @@ body {
 }
 
 div {
-  border: 1px blue solid;
   display: block;
 }
 
@@ -22,7 +21,7 @@ h2 {
 }
 
 p {
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -95,14 +94,17 @@ video {
   padding-left: 1rem;
 }
 
-.nav li:hover {
+.nav li:hover,
+.nav-foot li:hover {
   color: #445878;
   transition: color 350ms ease-in;
 }
 
 /* main-welcome style */
 .banner {
+  margin-bottom: 32px;
   margin-top: 64px;
+  padding: 32px 24px;
 }
 
 .image {
@@ -112,7 +114,7 @@ video {
 .large-left {
   align-items: center;
   display: flex;
-  padding: 32px 24px;
+  margin: 0 24px;
 }
 
 .side-right {
@@ -141,7 +143,6 @@ button:hover {
 
 .start {
   flex-basis: 40%;
-  margin-top: 16px;
 }
 
 /* Information style */
@@ -160,6 +161,10 @@ button:hover {
 
 .information-main h6 {
   font-size: 12px;
+}
+
+.information {
+  padding-bottom: 32px;
 }
 
 .card {
@@ -215,4 +220,34 @@ button:hover {
 
 .course p {
   padding: 0 16px 24px 16px;
+}
+
+/* thesis styles */
+.thesis-section h1 {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.thesis {
+  flex-basis: 60%;
+}
+
+.thesis-box .information-main {
+  padding-top: 0;
+}
+
+/* Footer styles */
+.main-foot {
+  background-color: #31353D;
+  color: #92CDCF;
+  font-size: 14px;
+  height: 64px;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding: 16px 24px;
+}
+
+.nav-foot li {
+  display: inline;
+  padding-left: 16px;
 }

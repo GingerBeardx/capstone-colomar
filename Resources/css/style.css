@@ -11,9 +11,6 @@ div {
   display: block;
 }
 
-h1, h2 {
-  padding: 12px 0px;
-}
 
 h1 {
   font-size: 2.3rem;
@@ -27,7 +24,6 @@ h2 {
 p {
   font-size: .9rem;
   line-height: 1.4;
-  padding: 8px 0;
 }
 
 html {
@@ -37,9 +33,18 @@ html {
 img {
   width: 100%;
 }
+
 .container {
   display: flex;
   justify-content: center;
+}
+
+.grey-back {
+  background-color: #ddd;
+}
+
+.white-back {
+  background-color: #EEEFF7;
 }
 
 /* header styles */
@@ -47,6 +52,9 @@ header {
   display: flex;
 }
 
+video {
+  width: 100%;
+}
 .top-banner {
   background-color: #92CDCF;
   display: flex;
@@ -85,13 +93,11 @@ header {
 
 .nav li:hover {
   color: #445878;
-  font-size: 1.2rem;
   transition: color 350ms ease-in;
 }
 
 /* main-welcome style */
 .banner {
-  background-color: #eee;
   margin-top: 64px;
 }
 
@@ -106,7 +112,7 @@ header {
 }
 
 .side-right {
-  padding-left: 24px;
+  margin-left: 24px;
 }
 
 .start {

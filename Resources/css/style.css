@@ -8,7 +8,6 @@ body {
 
 div {
   display: block;
-  border: 1px blue solid;
 }
 
 h1 {
@@ -176,6 +175,10 @@ button:hover {
   padding-bottom: 32px;
 }
 
+.mob-img {
+  display: none;
+}
+
 .card {
   align-items: center;
   display: flex;
@@ -301,12 +304,21 @@ button:hover {
     padding: 32px 16px;
   }
 
+  .dt-img {
+    display: none;
+  }
+
+  .mob-img {
+    display: inline;
+  }
+
   .information {
     margin: 0;
     padding: 0;
   }
 
-  .information-main {
+  /* Courses mobile */
+  .main-1 {
     display: none;
   }
 
@@ -323,16 +335,14 @@ button:hover {
   }
 
   .card {
+    align-items: flex-start;
     flex-direction: column;
     margin: 16px;
     padding: 0;
   }
 
   .card-text {
-    padding-left: 0;
-  }
-  .card img {
-    max-height: 200px;
+    padding: 16px;
   }
 
   .course {
@@ -345,5 +355,33 @@ button:hover {
     display: none;
   }
 
+  /* Thesis mobile */
+  .thesis-section h1 {
+    padding: 32px 0 16px 0;
+  }
 
+  .start-2 {
+    display: none;
+  }
+
+  .main-2 {
+    flex-basis: 100%;
+  }
+
+  .main-2 h2,
+  .main-2 p,
+  .main-2 h6 {
+    display: none;
+  }
+
+  /* Footer mobile */
+  .main-foot {
+    align-items: center;
+    height: 14px;
+    margin-top: 24px;
+  }
+
+  .nav-foot {
+    display: none;
+  }
 }

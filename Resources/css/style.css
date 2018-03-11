@@ -8,6 +8,7 @@ body {
 
 div {
   display: block;
+  border: 1px blue solid;
 }
 
 h1 {
@@ -70,15 +71,21 @@ video {
 }
 
 .logo,
-.nav {
+.nav,
+.nav-mobile {
   align-items: center;
   color: #EEEFF7;
   display: flex;
   padding: 0 24px;
 }
 
-.logo img {
+.logo img,
+.nav-mobile img {
   height: 2rem;
+}
+
+.nav-mobile {
+  display: none;
 }
 
 .logo span {
@@ -90,7 +97,8 @@ video {
   font-weight: bold;
 }
 
-.nav li {
+.nav li,
+.nav-mobile li {
   display: inline;
   padding-left: 1rem;
 }
@@ -251,4 +259,91 @@ button:hover {
 .nav-foot li {
   display: inline;
   padding-left: 16px;
+}
+
+/* Media Queries */
+@media all and (max-width: 640px) {
+  /* Nav-Bar Mobile */
+  li img {
+    max-width: 35px;
+    padding: 0 12px;
+  }
+
+  .nav,
+  .logo-name {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    flex-basis: 80%;
+    justify-content: center;
+  }
+
+  .nav-icons {
+    display: flex;
+  }
+
+  /* info mobile */
+  .banner {
+    margin: 0;
+    margin-top: 64px;
+    padding: 0;
+  }
+
+  .large-left {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .side-right {
+    margin: 0;
+    padding: 32px 16px;
+  }
+
+  .information {
+    margin: 0;
+    padding: 0;
+  }
+
+  .information-main {
+    display: none;
+  }
+
+  .start {
+    flex-basis: 100%;
+  }
+
+  .courses-body {
+    padding-bottom: 24px;
+  }
+
+  .course-heading h1 {
+    padding: 32px 0 16px 0;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 16px;
+    padding: 0;
+  }
+
+  .card-text {
+    padding-left: 0;
+  }
+  .card img {
+    max-height: 200px;
+  }
+
+  .course {
+    margin-bottom: 8px;
+  }
+
+  .course img,
+  .course h3,
+  .course p {
+    display: none;
+  }
+
+
 }

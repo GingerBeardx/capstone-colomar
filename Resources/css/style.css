@@ -60,7 +60,9 @@ video {
 }
 
 .top-banner {
+  align-items: center;
   background-color: #92CDCF;
+  border-bottom: 1px #445878 solid;
   display: flex;
   height: 64px;
   justify-content: space-between;
@@ -88,6 +90,7 @@ video {
 }
 
 .logo span {
+  text-shadow: 1px 1px #31353D;
   text-transform: uppercase;
 }
 
@@ -100,6 +103,7 @@ video {
 .nav-mobile li {
   display: inline;
   padding-left: 1rem;
+  text-shadow: 1px 1px #31353D;
 }
 
 .nav li:hover,
@@ -110,6 +114,8 @@ video {
 
 /* main-welcome style */
 .banner {
+  background-image: url('/Resources/images/img-river.jpg');
+  background-repeat: no-repeat;
   margin-bottom: 32px;
   margin-top: 64px;
   padding: 32px 24px;
@@ -182,7 +188,7 @@ button:hover {
 .card {
   align-items: center;
   display: flex;
-  padding: 16px 0 16px 16px
+  padding: 16px 0 16px 16px;
 }
 
 .card p {
@@ -205,11 +211,15 @@ button:hover {
 
 /* Courses style */
 .courses-body h1 {
+  background-color: #445878;
+  color: #EEEFF7;
   padding: 32px 0;
   text-align: center;
+  text-shadow: 2px 2px #31353D;
 }
 
 .course-cards {
+  background-color: #445878;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -251,8 +261,10 @@ button:hover {
 /* Footer styles */
 .main-foot {
   background-color: #31353D;
-  color: #92CDCF;
+  color: #EEEFF7;
+  text-shadow: 1px 1px #445878;
   font-size: 14px;
+  font-weight: lighter;
   height: 64px;
   justify-content: space-between;
   margin-top: 32px;
@@ -265,8 +277,19 @@ button:hover {
 }
 
 /* Media Queries */
+@media all and (max-width: 1000px) {
+  .large-left {
+    flex-basis: 50%;
+  }
+
+  .start {
+    flex-basis: 50%;
+  }
+}
+
 @media all and (max-width: 640px) {
   /* Nav-Bar Mobile */
+  .logo img,
   li img {
     max-width: 35px;
     padding: 0 12px;

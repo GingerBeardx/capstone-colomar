@@ -114,7 +114,7 @@ video {
 
 /* main-welcome style */
 .banner {
-  background-image: url('./Resources/images/img-river.jpg');
+  background-image: url('..//images/img-river.jpg');
   background-repeat: no-repeat;
   margin-bottom: 32px;
   margin-top: 64px;
@@ -219,6 +219,7 @@ button:hover {
 }
 
 .course-cards {
+  background: radial-gradient(#445878, #92CDCF);
   background-color: #445878;
   display: flex;
   flex-wrap: wrap;
